@@ -45,7 +45,8 @@ section.webdoor {
 }
 @media (max-width: 600px) {
   section.webdoor {
-    height: 800px;
+    height: auto;
+    padding-bottom: 25px;
     background: url("../images/bgTopo.png");
     background-position: center;
     background-size: cover;
@@ -185,6 +186,16 @@ section.webdoor .right .wrapForm form input#enviaForm {
 section.webdoor .right .wrapForm form input#enviaForm:hover {
   opacity: 0.8;
   transition: all 0.3s;
+}
+section.webdoor .right .wrapForm form textarea {
+  width: 80%;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin: 5px auto;
+  border: none;
+  font-family: Montserrat;
 }
 section.webdoor .right .wrapForm form .avisoDados {
   position: relative;

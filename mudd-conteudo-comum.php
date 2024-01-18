@@ -302,6 +302,7 @@
         email: formPluga.querySelector("input[name='email']").value,
         telefone: formPluga.querySelector("input[name='telefone']").value,
         interesse: formPluga.querySelector("input[name='interesse']").value,
+        mensagem: formPluga.querySelector("textarea[name='mensagem']").value,
       };
 
       // Converte os dados em um objeto JSON
@@ -320,9 +321,11 @@
       if (response.status === 200) {
         // Formulário enviado com sucesso
         document.querySelector("#wrapRespostaModal").style.display = "block";
+        formPluga.reset();
       } else {
         // Erro ao enviar o formulário
         document.querySelector("#wrapRespostaModal").style.display = "block";
+        formPluga.reset();
       }
     });
 </script>

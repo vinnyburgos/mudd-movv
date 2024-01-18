@@ -8,6 +8,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5XNGH9CX');</script>
 <!-- End Google Tag Manager -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5C6VZHS6');</script>
+<!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live 141</title>
@@ -26,6 +34,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XNGH9CX"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5C6VZHS6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <section class="webdoor">
         <div class="center">
             <div class="left">
@@ -40,6 +53,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <input id="telefone" type="text" name="telefone" placeholder="Telefone:">
                         <input type="email" name="email" placeholder="Email:">
                         <input type="hidden" id="interesse" name="interesse" value="Live 141">
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Fale em poucas palavras o motivo de seu contato" required></textarea>
                         <input id="enviaForm" type="submit" value="Enviar">
                     </form>
                 </div>
@@ -334,6 +348,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         email: formPluga.querySelector("input[name='email']").value,
         telefone: formPluga.querySelector("input[name='telefone']").value,
         interesse: formPluga.querySelector("input[name='interesse']").value,
+        mensagem: formPluga.querySelector("textarea[name='mensagem']").value,
       };
 
       // Converte os dados em um objeto JSON
@@ -352,9 +367,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       if (response.status === 200) {
         // Formulário enviado com sucesso
         document.querySelector("#wrapRespostaModal").style.display = "block";
+        formPluga.reset();
       } else {
         // Erro ao enviar o formulário
         document.querySelector("#wrapRespostaModal").style.display = "block";
+        formPluga.reset();
       }
     });
 </script>

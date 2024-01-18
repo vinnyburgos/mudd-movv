@@ -41,6 +41,14 @@ section.webdoor {
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+    @media(max-width:600px) {
+        height: auto;
+        padding-bottom: 25px;
+        background: url("../images/bgTopo.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     .left {
         position: relative;
         display: inline-block;
@@ -136,6 +144,16 @@ section.webdoor {
                             transition: all .3s;
                         }
                     }
+                }
+                textarea {
+                    width: 80%;
+                    height: 40px;
+                    line-height: 40px;
+                    border-radius: 20px;
+                    padding-left: 10px;
+                    margin: 5px auto;
+                    border: none;
+                    font-family: Montserrat;
                 }
             }
         }
