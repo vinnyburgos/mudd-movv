@@ -1,0 +1,749 @@
+@font-face {
+  font-family: crystasea;
+  src: url('Crystasea.ttf');
+}
+@font-face {
+  font-family: Champagne;
+  font-weight: 400;
+  src: url('Champagne&Limousines.ttf');
+}
+@font-face {
+  font-family: Champagne;
+  font-weight: 600;
+  src: url('Champagne&LimousinesBold.ttf');
+}
+html,
+body {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  color: #656565;
+  scroll-behavior: smooth;
+}
+.center {
+  position: relative;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1880px;
+}
+.clear {
+  clear: both;
+}
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+a:hover {
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+section.webdoor {
+  position: relative;
+  display: block;
+  padding-top: 0;
+  margin: 0;
+  width: 100%;
+  height: 700px;
+  background: url("../images/bgTopo.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  section.webdoor {
+    height: 800px;
+    background: url("../images/bgTopo.png");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+section.webdoor .left {
+  position: relative;
+  display: inline-block;
+  width: 48%;
+  height: 700px;
+  vertical-align: middle;
+}
+@media (max-width: 600px) {
+  section.webdoor .left {
+    width: 100%;
+    height: auto;
+  }
+}
+section.webdoor .left h1 {
+  position: relative;
+  width: 250px;
+  padding-top: 30px;
+  left: 10%;
+}
+section.webdoor .left h1 img {
+  float: left;
+}
+@media (max-width: 600px) {
+  section.webdoor .left h1 img {
+    float: none;
+  }
+}
+section.webdoor .left h3 {
+  position: relative;
+  left: 10%;
+  margin-top: 40%;
+  color: #fff;
+  font-size: 55px;
+  font: normal normal normal 35px/35px Champagne;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase;
+  width: 550px;
+}
+@media (max-width: 600px) {
+  section.webdoor .left h3 {
+    position: relative;
+    display: block;
+    bottom: auto;
+    top: auto;
+    margin-top: auto;
+    font-size: 30px;
+    line-height: 35px;
+    margin-top: 20px;
+    width: 85%;
+  }
+}
+section.webdoor .left .asterisco {
+  position: relative;
+  display: block;
+  color: #fff;
+  left: 10%;
+  margin-top: -40px;
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  section.webdoor .left .asterisco {
+    margin-top: -40px;
+  }
+}
+section.webdoor .left .logos {
+  position: relative;
+  left: 10%;
+  margin-top: 20px;
+}
+@media (max-width: 600px) {
+  section.webdoor .left .logos {
+    width: 80%;
+    margin-top: -30px;
+  }
+}
+section.webdoor .right {
+  position: relative;
+  display: inline-block;
+  width: 48%;
+  vertical-align: middle;
+}
+@media (max-width: 600px) {
+  section.webdoor .right {
+    width: 100%;
+  }
+}
+section.webdoor .right .wrapForm {
+  width: 80%;
+  float: right;
+  position: relative;
+  background: rgba(5, 5, 5, 0.5);
+  border-radius: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+@media (max-width: 600px) {
+  section.webdoor .right .wrapForm {
+    float: none;
+    width: 100%;
+  }
+}
+section.webdoor .right .wrapForm .tituloForm {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 10%;
+  padding-top: 25px;
+}
+section.webdoor .right .wrapForm form {
+  position: relative;
+  width: 98%;
+  margin: 20px auto;
+}
+section.webdoor .right .wrapForm form input {
+  width: 80%;
+  height: 50px;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin: 5px auto;
+  border: none;
+  font-family: Montserrat;
+}
+section.webdoor .right .wrapForm form input#enviaForm {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  height: 50px;
+  width: 40%;
+  right: -20px;
+  background: #F8923D 0% 0% no-repeat padding-box;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+section.webdoor .right .wrapForm form input#enviaForm:hover {
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+section.webdoor .right .wrapForm form .avisoDados {
+  position: relative;
+  display: inline-block;
+  width: 33%;
+  top: 10px;
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+}
+section.subBanner {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0;
+  background-color: #F8923D;
+  text-align: center;
+  font: normal normal normal 18px/25px Montserrat;
+}
+@media (max-width: 600px) {
+  section.subBanner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10%;
+    overflow: hidden;
+  }
+}
+section.subBanner .wrapPoints .point {
+  position: relative;
+  display: inline-block;
+  width: 22%;
+  top: -7px;
+}
+section.subBanner .wrapPoints .point:nth-child(2) {
+  padding-left: 25px;
+}
+@media (max-width: 600px) {
+  section.subBanner .wrapPoints .point:nth-child(2) {
+    padding-left: 0;
+  }
+}
+@media (max-width: 600px) {
+  section.subBanner .wrapPoints .point {
+    width: 100%;
+    display: block;
+  }
+}
+section.subBanner .wrapPoints .point .innerIntegral {
+  position: relative;
+  display: block;
+  color: #fff;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  section.subBanner .wrapPoints .point .innerIntegral {
+    width: 100%;
+  }
+}
+section.subBanner .wrapPoints .point .innerIntegral img {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  left: -25px;
+  vertical-align: middle;
+  display: inline-block;
+}
+section.subBanner .wrapPoints .point .innerIntegral p {
+  position: relative;
+  top: 10px;
+  font-size: 13px;
+  text-align: left;
+  left: -10px;
+  width: 80%;
+  line-height: 20px;
+  vertical-align: middle;
+  display: inline-block;
+}
+@media (max-width: 600px) {
+  section.subBanner .wrapPoints .point .innerIntegral p {
+    font-size: 12px;
+  }
+}
+section.mosaico {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #5C6C86;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  section.mosaico {
+    padding-top: 0;
+  }
+}
+section.mosaico .left {
+  position: relative;
+  display: inline-block;
+  width: 20%;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+@media (max-width: 600px) {
+  section.mosaico .left {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+section.mosaico .left img {
+  position: relative;
+  top: 5px;
+  width: 25px;
+  margin-right: 10px;
+}
+section.mosaico .left h3 {
+  color: #1E1E1E;
+  font-size: 30px;
+  width: 300px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+@media (max-width: 600px) {
+  section.mosaico .left h3 {
+    width: 80%;
+  }
+}
+section.mosaico .left .pontos {
+  font-size: 18px;
+  margin: 0;
+}
+section.mosaico .left .content {
+  margin-top: 20px;
+  width: 380px;
+  color: #1E1E1E;
+  text-align: left;
+  font: normal normal normal 14px/18px Montserrat;
+}
+@media (max-width: 600px) {
+  section.mosaico .left .content {
+    width: 90%;
+    line-height: 25px;
+  }
+}
+section.mosaico .left .btnCta {
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+  background-color: #ff904e;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  font: normal normal normal 14px/22px Montserrat;
+}
+@media (max-width: 600px) {
+  section.mosaico .left .btnCta {
+    width: 85%;
+    margin: 35px auto 0 auto;
+    margin-left: 2%;
+  }
+}
+section.mosaico .right {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  margin-left: 120px;
+  vertical-align: middle;
+}
+@media (max-width: 600px) {
+  section.mosaico .right {
+    display: block;
+    margin-left: 0;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+section.mosaico .right img {
+  width: 80%;
+}
+@media (max-width: 600px) {
+  section.mosaico .right img {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    margin-left: 5%;
+  }
+}
+section.conheca {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+section.conheca h2 {
+  color: #1E1E1E;
+  text-align: left;
+  width: 340px;
+  margin-left: 8%;
+}
+@media (max-width: 600px) {
+  section.conheca h2 {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+section.conheca .wrapControls {
+  position: relative;
+  display: inline-block;
+  margin-top: -45px;
+  right: 10%;
+  width: 200px;
+}
+@media (max-width: 600px) {
+  section.conheca .wrapControls {
+    right: auto;
+    diplay: block;
+    width: 80%;
+    margin: 30px auto 0 auto;
+    float: none;
+  }
+}
+section.conheca .wrapControls .swiper-pagination {
+  position: relative;
+  top: -10px;
+  color: #ff904e;
+}
+section.conheca .wrapSwiper:before {
+  content: '';
+  width: 150px;
+  height: 500px;
+  top: 60px;
+  left: 0;
+  position: absolute;
+  z-index: 999999;
+  background: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 600px) {
+  section.conheca .wrapSwiper:before {
+    display: none;
+  }
+}
+section.conheca .wrapSwiper:after {
+  content: '';
+  width: 150px;
+  height: 500px;
+  right: 0;
+  top: 60px;
+  position: absolute;
+  z-index: 999999;
+  background: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 600px) {
+  section.conheca .wrapSwiper:after {
+    display: none;
+  }
+}
+section.conheca .swiper-slide {
+  position: relative;
+  height: 500px;
+  padding-top: 40px;
+}
+@media (max-width: 600px) {
+  section.conheca .swiper-slide {
+    height: 420px;
+  }
+}
+section.conheca .swiper-slide .box {
+  position: relative;
+  height: 360px;
+  box-shadow: 5px 5px 20px #ccc;
+  border-radius: 10px;
+  text-align: left;
+  overflow: hidden;
+  width: 270px;
+  max-width: 270px;
+  margin: 0 auto;
+}
+section.conheca .swiper-slide .box .imgTop {
+  position: relative;
+  height: 160px;
+  overflow: hidden;
+}
+section.conheca .swiper-slide .box .imgTop img {
+  width: 100%;
+  margin-top: 0px;
+}
+section.conheca .swiper-slide .box .innerContent {
+  padding: 20px;
+  padding-top: 0;
+}
+section.conheca .swiper-slide .box .innerContent h4 {
+  margin-top: 12px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #000;
+}
+section.conheca .swiper-slide .box .innerContent .ponto {
+  color: #1E1E1E;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: -5px;
+  margin-left: 8px;
+  width: 95%;
+}
+section.conheca .swiper-slide .box .innerContent .ponto img {
+  position: relative;
+  width: 20px;
+  left: -8px;
+  top: 4px;
+}
+section.conheca .swiper-slide .box .innerContent .btn {
+  position: absolute;
+  margin: 30px auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 60%;
+  font-size: 16px;
+  bottom: 0;
+  left: -10px;
+  color: #ff904e;
+  text-align: center;
+  border-radius: 10px;
+}
+section.conheca .swiper-slide .box .innerContent .btn img {
+  position: absolute;
+  top: 8px;
+  right: 0px;
+  width: 25px;
+}
+section.realizar {
+  position: relative;
+  display: block;
+  padding-bottom: 70px;
+}
+@media (max-width: 600px) {
+  section.realizar {
+    padding-top: 0;
+  }
+}
+section.realizar .left {
+  position: relative;
+  display: inline-block;
+  width: 48%;
+  vertical-align: middle;
+  padding-left: 10%;
+}
+@media (max-width: 600px) {
+  section.realizar .left {
+    width: 100%;
+    display: block;
+  }
+}
+section.realizar .left h3 {
+  color: #000;
+  font-size: 30px;
+  width: 300px;
+}
+@media (max-width: 600px) {
+  section.realizar .left h3 {
+    font-size: 25px;
+  }
+}
+section.realizar .left h3 span {
+  color: #ff904e;
+}
+@media (max-width: 600px) {
+  section.realizar .left h3 {
+    width: 80%;
+  }
+}
+section.realizar .left .content {
+  width: 450px;
+  font-size: 14px;
+}
+section.realizar .left .content .black {
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  section.realizar .left .content {
+    width: 80%;
+  }
+}
+section.realizar .right {
+  position: relative;
+  display: inline-block;
+  width: 35%;
+  vertical-align: middle;
+  left: -50px;
+  margin-top: 30px;
+}
+@media (max-width: 600px) {
+  section.realizar .right {
+    left: auto;
+    top: auto;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+section.realizar .right img {
+  width: 100%;
+  float: right;
+}
+@media (max-width: 600px) {
+  section.realizar .right img {
+    width: 80%;
+    float: none;
+    margin: 20px auto;
+  }
+}
+footer {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+footer .left {
+  position: relative;
+  display: inline-block;
+  width: 20%;
+  text-align: left;
+}
+footer .left .logo {
+  width: 180px;
+}
+@media (max-width: 600px) {
+  footer .left {
+    width: 100%;
+    text-align: left;
+    left: 10%;
+  }
+}
+footer .right {
+  position: relative;
+  display: inline-block;
+  width: 60%;
+  text-align: left;
+  vertical-align: top;
+}
+@media (max-width: 600px) {
+  footer .right {
+    width: 100%;
+    text-align: left;
+  }
+}
+footer .right .unidade {
+  position: relative;
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+}
+@media (max-width: 600px) {
+  footer .right .unidade {
+    width: 100%;
+    display: block;
+    left: 10%;
+  }
+}
+footer .right .unidade.unidade1 {
+  width: 60%;
+}
+@media (max-width: 600px) {
+  footer .right .unidade.unidade1 {
+    width: 100%;
+  }
+}
+footer .right .unidade.unidade2 {
+  width: 20%;
+}
+@media (max-width: 600px) {
+  footer .right .unidade.unidade2 {
+    width: 100%;
+  }
+}
+footer .right .unidade .left {
+  width: 3%;
+  position: relative;
+  display: inline-block;
+}
+@media (max-width: 600px) {
+  footer .right .unidade .left {
+    left: auto;
+  }
+}
+footer .right .unidade .left img {
+  position: relative;
+}
+footer .right .unidade .right {
+  width: 80%;
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+footer .right .unidade .right .titulo {
+  font-weight: 600;
+  margin-bottom: -10px;
+  color: #ff904e;
+}
+footer .direitos {
+  position: relative;
+  margin-top: 40px;
+  font-size: 12px;
+  margin-bottom: 30px;
+  text-align: left;
+  margin-left: 10%;
+}
+.wrapWhatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999999999;
+}
+.wrapWhatsapp .whatsapp {
+  width: 50px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.wrapWhatsapp .whatsapp:hover {
+  opacity: 1;
+  transition: all 0.3s;
+}
+.desktop {
+  display: block;
+}
+@media (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+}
+.mobile {
+  display: none;
+}
+@media (max-width: 600px) {
+  .mobile {
+    display: block;
+  }
+}

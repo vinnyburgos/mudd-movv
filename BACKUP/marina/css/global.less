@@ -1,0 +1,336 @@
+html, body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    font-family: 'Work Sans', sans-serif;
+    color: #656565;
+    scroll-behavior: smooth;
+}
+
+.center {
+    position: relative;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1880px;
+}
+
+.clear {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    transition: all .3s;
+    &:hover {
+        opacity: .8;
+        transition: all .3s;
+    }
+}
+
+section.webdoor {
+    position: relative;
+    display: block;
+    padding-top: 0;
+    margin: 0;
+    width: 100%;
+    height: 700px;
+    background: url("../images/bgTopo.png");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    .left {
+        position: relative;
+        display: inline-block;
+        width:48%;
+        height: 700px;
+        vertical-align: middle;
+        @media(max-width:600px) {
+            width: 100%;
+            height: auto;
+        }
+        h1 {
+            position: relative;
+            width: 250px;
+            padding-top: 30px;
+            left: 10%;
+            img {
+                width: 100%;
+                float: left;
+                @media(max-width:600px) {
+                    float: none;
+                }
+            }
+        }
+        h3 {
+            position: absolute;
+            bottom: 220px;
+            left: 10%;
+            top: auto;
+            color: #fff;
+            font-size: 55px;
+            font-weight: 400;
+            font: normal normal normal 48px/60px Playfair Display;
+            @media(max-width:600px) {
+                position: relative;
+                display: block;
+                bottom: auto;
+                top: -50px;
+                font-size: 40px;
+            }
+        }
+    }
+    .right {
+        position: relative;
+        display: inline-block;
+        width:48%;
+        vertical-align: middle;
+        @media(max-width:600px) {
+            width: 100%;
+            margin-top: -50px;
+        }
+        .wrapForm {
+            width: 80%;
+            float: right;
+            position: relative;
+            background:  rgba(5, 5, 5, 0.5);
+            border-radius: 20px;
+            text-align: center;
+            padding-bottom: 10px;
+            @media(max-width:600px) {
+               float: none;
+               width: 100%;
+            }
+            .tituloForm {
+                color: #fff;
+                font-size: 22px;
+                font-weight: 100;
+                text-align: left;
+                margin-left: 10%;
+                padding-top: 25px;
+            }
+            form {
+                position: relative;
+                width:98%;
+                margin: 20px auto;
+                input {
+                    width: 80%;
+                    height: 40px;
+                    border-radius: 20px;
+                    padding-left: 10px;
+                    margin: 5px auto;
+                    &#enviaForm {
+                        margin-top: 10px;
+                        height: 50px;
+                        width: 82%;
+                        background: #E4DDCE 0% 0% no-repeat padding-box;
+                        // color: #fff;
+                        border: none;
+                        border-radius: 15px;
+                        cursor: pointer;
+                        transition: all .3s;
+                        &:hover {
+                            opacity: .8;
+                            transition: all .3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+section.subBanner {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0;
+    background-color: #5C6C86;
+    text-align: center;
+    font: normal normal normal 18px/25px Ubuntu;
+    .wrapPoints {
+        position: relative;
+        text-align: center;
+        max-width: 750px;
+        margin: 0 auto;
+        .point {
+            position: relative;
+            display: inline-block;
+            width: 48%;
+            top: -7px;
+            @media(max-width:400px) {
+                width: 22%;
+                left: -42px;
+            }
+            .innerIntegral {
+                position: relative;
+                display: block;
+                width: 350px;
+                color: #fff;
+                margin: 0 auto;
+                text-align: center;
+                // padding-left: 20px;
+                img {
+                    position: relative;
+                    width: 20px;
+                    height: 20px;
+                    float: left;
+                    top: 10px;
+                }
+                p {
+                    position: relative;
+                    top: 10px;
+                    font-size: 16px;
+                    text-align: left;
+                    margin: 15px auto;
+                    left: 20px;
+                    @media(max-width:600px) {
+                        font-size: 13px;
+                        left: -40px;
+                    }
+                    @media(max-width:400px) {
+                        font-size: 12px;
+                        left: 10px;
+                        width: 150px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        .verticalLine {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            width: 1px;
+            top: -8px;
+            margin: 15px auto 0 auto;
+            height: 40px;
+            margin-right: 10px;
+            border-right: 1px solid #fff;
+        }
+    }
+    .right {
+        position: relative;
+        display: inline-block;
+        width: 48%;
+        top: -7px;
+        @media(max-width:400px) {
+            width: 55%;
+            float: right;
+        }
+        .innerIntegral {
+            position: relative;
+            display: block;
+            width: 350px;
+            color: #fff;
+            height: 35px;
+            padding-left: 40px;
+            border-left: 2px solid #fff;
+            text-align: center;
+            @media(max-width:600px) {
+                padding-left: 10px;
+            }
+            img {
+                position: relative;
+                width: 20px;
+                height: 20px;
+                float: left;
+                top: 10px;
+            }
+            p {
+                position: relative;
+                top: 10px;
+                font-size: 16px;
+                text-align: center;
+                margin: 0 auto;
+                @media(max-width:600px) {
+                    font-size: 13px;
+                    left: -40px;
+                }
+                @media(max-width:400px) {
+                    font-size: 12px;
+                    left: 10px;
+                    width: 150px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+section.mosaico {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #5C6C86;
+    background-color: #F5F5F5;
+    .left {
+        position: relative;
+        display: inline-block;
+        width: 65%;
+        vertical-align: middle;
+        @media(max-width:600px) {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+        }
+        img {
+            width: 90%;
+            float: right;
+            @media(max-width:600px) {
+                float: none;
+                margin: 0 auto;
+            }
+        }
+    }
+    .right {
+        position: relative;
+        display: inline-block;
+        width: 32%;
+        padding-left: 20px;
+        vertical-align: middle;
+        @media(max-width:600px) {
+            width: 100%;
+            margin: 0 auto;
+        }
+        img {
+            position: relative;
+            top: 5px;;
+            width: 25px;
+            margin-right: 10px;
+        }
+        h3 {
+            color: #5C6C86;
+            font-size: 40px;
+            width: 300px;
+            margin-bottom: 15px;
+            font: normal normal normal 40px/48px Playfair Display;
+        }
+        .pontos {
+            font-size: 18px;
+            margin: 0;
+        }
+        .content {
+            margin-top: 20px;
+            width: 250px;
+            font: normal normal normal 18px/25px Ubuntu;
+        }
+        .btnCta {
+            margin-top: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 200px;
+            background-color: #ff904e;
+            color: #fff;
+            text-align: center;
+            border-radius: 10px;
+            font: normal normal normal 16px/25px Ubuntu;
+        }
+
+    }
+
+}

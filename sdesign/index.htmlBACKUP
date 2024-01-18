@@ -1,0 +1,430 @@
+<!-- <!DOCTYPE html> -->
+<?php
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js' integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=' crossorigin='anonymous'></script>
+    <script src="js/global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11387401505">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-11387401505');
+    </script>
+
+
+</head>
+<body>
+    <section class="webdoor">
+        <div class="center">
+            <div class="left">
+                <!-- <h1 class="titulo"><img src="images/141.png" alt=""></h1> -->
+                <h3 class="subtitulo">Desfrute de uma vida de exclusividade feita para você no
+                    <b> S DESIGN em Botafogo</b></h3>
+                <!-- <p class="asterisco">*financiamento direto com a taxa de 5,9%.</p> -->
+                <img class="logos" src="images/logosTopo.png" alt="">
+            </div>
+            <div class="right">
+                <div class="wrapForm" id="formulario">
+                    <p class="tituloForm">Cadastre-se para<br> saber mais!</p>
+                    <form id="formularioTopo" action="envia.php" method="post">
+                        <input type="text" name="nome" placeholder="Nome completo">
+                        <input type="email" name="email" placeholder="E-mail">
+                        <input id="telefone" type="text" name="telefone" placeholder="DDD + Número">
+                        <input type="hidden" id="interesse" name="interesse" value="SDesign">
+                        <p class="avisoDados">Seus dados estão seguros com a gente</p>
+                        <input id="enviaForm" type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="clear"></div>
+
+    <section class="subBanner">
+        <div class="center">
+            <div class="wrapPoints">
+                <div class="point">
+                    <div class="innerIntegral innerPoint">
+                        <img src="images/tickTopo.png" alt="tick"><p>3 suítes e de 4 quartos</p>
+                    </div>
+                </div>
+                <div class="point">
+                    <div class="innerIntegral innerPoint">
+                        <img src="images/tickTopo.png" alt="tick"><p>150m2 a 166m2</p>
+                    </div>
+                </div>
+                <div class="point">
+                    <div class="innerIntegral innerPoint">
+                        <img src="images/tickTopo.png" alt="tick"><p>Varandas gourmet</p>
+                    </div>
+                </div>
+                <div class="point">
+                    <div class="innerIntegral innerPoint">
+                        <img src="images/tickTopo.png" alt="tick"><p>Churrasqueira a gás</p>
+                    </div>
+                </div>
+                <div class="point">
+                    <div class="innerIntegral innerPoint">
+                        <img src="images/tickTopo.png" alt="tick"><p>Cortina de vidro com fechamento retrátil</p>
+                    </div>
+                </div>
+                <div class="point">
+                    <div class="innerIntegral innerPoint">
+                        <img src="images/tickTopo.png" alt="tick"><p>2 vagas</p>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="clear"></div>
+
+    <section class="mosaico">
+        <div class="centerMosaico">
+            <div class="left">
+
+                <div class="mobile"><img style="width:100%;" src="images/mosaico.png" alt=""></div>
+
+
+                <h3>Sobre o empreendimento</h3>
+
+                <p class="content">Explore o conforto e sofisticação do S Design Residencial em Botafogo!<br><br>
+                
+                Unidades de 3 e 4 quartos, 150m2 a 166m2, varandas gourmet, churrasqueira a gás, cortina de vidro retrátil e muito mais.<br><br>
+            
+                Desfrute de uma vida de exclusividade, com comodidades modernas como interruptores smart, tomada com saída USB e fechadura biométrica. Um lar inspirado na beleza e acolhimento carioca, aguarda você no coração de Botafogo, cercado de charme e tranquilidade.<br><br>
+            
+                Entre em contato e saiba mais!</p>
+
+                <a href="#formulario"><div class="btn btnCta">Agende sua visita ao decorado!</div></a>
+            </div>
+            <div class="right">
+                <div class="wrapMosaico">
+                    <div class="desktop"><img src="images/mosaico.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="clear"></div>
+
+    <section class="conheca">
+        <div class="center">
+            <h2>Esses empreendimentos vão encantar seu coração!</h2>
+            <div class="wrapControls">
+                <div class="swiper-button-prev"><img src="images/slide/setaLeft.png" alt=""></div>
+                <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"><img src="images/slide/setaRight.png" alt=""></div>
+            </div>
+        </div>
+        <div class="wrapSwiper">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+
+                        <div class="swiper-slide">
+                            <div class="box">
+                                <div class="imgTop"><img src="images/slide/ornato.png" alt=""></div>
+                                <div class="innerContent">
+                                    <h4>Ornato - Tijuca</h4>
+                                    <div class="lineOrange"></div>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Apartamentos de 70m² a 249m²</p>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">2, 3 e 4 quartos</p>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Lazer completo no rooftop.</p>
+                                    <a id="btnOrnato" href="#formulario"><div class="btn btnSaiba">Saiba mais<img src="images/setaSaiba.png" alt=""></div></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="box">
+                                <div class="imgTop"><img src="images/slide/nurban.png" alt=""></div>
+                                <div class="innerContent">
+                                    <h4>Nurban - Botafogo</h4>
+                                    <div class="lineOrange"></div>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Apartamentos com 3 suítes</p>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Coberturas Duplex</p>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Lazer completo.</p>
+                                    <a id="btnNurban" href="#formulario"><div class="btn btnSaiba">Saiba mais<img src="images/setaSaiba.png" alt=""></div></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="box">
+                                <div class="imgTop"><img src="images/slide/blanc.png" alt=""></div>
+                                <div class="innerContent">
+                                    <h4>Blanc 260 - Botafogo</h4>
+                                    <div class="lineOrange"></div>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Apartamentos com 4 quartos</p>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Coberturas com 3 suítes</p>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Lazer completo.</p>
+                                    <a id="btnBlanc" href="#formulario"><div class="btn btnSaiba">Saiba mais<img src="images/setaSaiba.png" alt=""></div></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="box">
+                                <div class="imgTop"><img src="images/slide/alma.png" alt=""></div>
+                                <div class="innerContent">
+                                    <h4>Alma - Ipanema</h4>
+                                    <div class="lineOrange"></div>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Apartamentos de 58m² com opção de Double Suites,</p>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Up Gardens com varanda Coberturas Duplex.</p>
+                                    <a id="btnAlma" href="#formulario"><div class="btn btnSaiba">Saiba mais<img src="images/setaSaiba.png" alt=""></div></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="box">
+                                <div class="imgTop"><img src="images/slide/gloria.png" alt=""></div>
+                                <div class="innerContent">
+                                    <h4>Glória Residencial</h4>
+                                    <div class="lineOrange"></div>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Apartamentos de até 4 suítes</p>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Lazer 5 estrelas no rooftop.</p>
+                                    <a id="btnGloria" href="#formulario"><div class="btn btnSaiba">Saiba mais<img src="images/setaSaiba.png" alt=""></div></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="box">
+                                <div class="imgTop"><img src="images/slide/tie.png" alt=""></div>
+                                <div class="innerContent">
+                                    <h4>Tiê Residencial</h4>
+                                    <div class="lineOrange"></div>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Apartamentos com 2, 3 e 4 quartos.</p>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Lazer completo</p>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Comodidade de um condomínio clube.</p>
+                                    <a id="btnTie" href="#formulario"><div class="btn btnSaiba">Saiba mais<img src="images/setaSaiba.png" alt=""></div></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="box">
+                                <div class="imgTop"><img src="images/slide/all.png" alt=""></div>
+                                <div class="innerContent">
+                                    <h4>All Jardim Oceânico</h4>
+                                    <div class="lineOrange"></div>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Apartamentos de 2 e 3 quartos</p>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Coberturas Duplex</p>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">3.400m² de lazer para todos.</p>
+                                    <a id="btnAll" href="#formulario"><div class="btn btnSaiba">Saiba mais<img src="images/setaSaiba.png" alt=""></div></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="box">
+                                <div class="imgTop"><img src="images/slide/vistaIpanema.png" alt=""></div>
+                                <div class="innerContent">
+                                    <h4>Vista Ipanema</h4>
+                                    <div class="lineOrange"></div>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Up Gardens com 304m².</p>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Apartamentos com 346m² e 173m²</p>
+                                    <p class="ponto"><img src="images/tickSlide.png" alt="">Coberturas Duplex.</p>
+                                    <a id="btnVista" href="#formulario"><div class="btn btnSaiba">Saiba mais<img src="images/setaSaiba.png" alt=""></div></a>
+                                </div>
+                            </div>
+                        </div>
+
+                  
+                    </div>
+                    <!-- Slides -->
+
+                </div>
+                <!-- <div class="swiper-button-prev"><img src="images/setaLeft.png" alt=""></div>
+                <div class="swiper-button-next"><img src="images/setaRight.png" alt=""></div> -->
+            </div>
+        </div>
+    </section>
+
+    <div class="clear"></div>
+
+    <section class="realizar">
+        <div class="center">
+            <div class="left">
+                <h3>Prazer, Nós<br>somos a <span>MUDD!</span></h3>
+
+                <img class="mobile" style="width: 80%;" src="images/prazer.png" alt="">
+
+                <p class="content">
+                    Uma empresa parceira do Opportunity Fundo de Investimento Imobiliário, unimos a juventude, energia, experiência e segurança necessária para movimentar o mercado imobiliário da cidade sorriso.<br><br>
+
+                    Nascemos vindo de um vasto conhecimento do mercado imobiliário e enxergamos uma oportunidade em entregar ao nosso cliente uma prestação de serviço cada vez melhor.<br><br>
+
+                    Acreditamos que uma intermediação imobiliária bem feita requer excelência de atendimento com transparência e segurança e assim, nós da MUDD, contamos com uma equipe altamente qualificado através de constante capacitação do nosso time.
+                </p>
+               
+            </div>
+            <div class="right">
+                <img class="desktop" src="images/prazer.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="clear"></div>
+
+    <footer>
+        <div class="center">
+            <div class="left">
+                <img class="logo" src="images/logoMudd.png" alt="">
+            </div>
+            <div class="right">
+
+                <div class="unidade unidade1">
+                    <div class="left">
+                        <img src="images/pin.png" alt="">
+                    </div>
+                    <div class="right">
+                        <p class="titulo">Matriz:</p>
+                        <p class="content">Rua Visconde de Pirajá, 623 - Sala 201<br>Ipanema - Rio de Janeiro/RJ</p>
+                    </div>
+                </div>
+
+                <div class="unidade unidade2">
+                    <div class="left">
+                        <img src="images/telefone.png" alt="">
+                    </div>
+                    <div class="right">
+                        <p class="titulo">Telefone</p>
+                        <p class="content">(21) 3854-5623</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="direitos"><p>Todos os direitos reservados.</p></div>
+        </div>
+    </footer>
+
+   
+    <div class="wrapWhatsapp"><a href="https://wa.me/552138545623" target="_blank"><img class="whatsapp" src="images/whatsapp.png" alt=""></a></div>
+
+<!-- slide  -->
+<style>
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+        position: relative;
+        content: '';
+        z-index: 99999999999;
+    }
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+        position: relative;
+        content: '';
+        z-index: 99999999999;
+    }
+</style>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 4,
+        direction: 'horizontal',
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        // autoplay: {
+        //     delay: 3500,
+        //     disableOnInteraction: false,
+        // },
+        breakpoints: {
+            100: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+        },
+        initialSlide: 2,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+          },
+        // pagination: {
+        //     el: '.swiper-pagination',
+        // },
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+    });
+</script>
+<!-- slide  -->
+
+<!-- dispara formulário -->
+<script>
+    const formPluga = document.querySelector("#formularioTopo");
+    const campos = document.querySelectorAll("input");
+    for (let campo of campos) {
+        campo.setAttribute("required", "required");
+    }
+    formPluga.setAttribute("action", "https://hooks.pluga.co/v1/webhooks/MzkxOTQ4NTE4NTUzMTYyNzIzMlQxNjk4NDMzODQx");
+
+    // Adiciona um evento de submit ao formulário
+    formPluga.addEventListener("submit", async (e) => {
+      // Evita que o formulário seja enviado normalmente
+      e.preventDefault();
+
+      data = new Date().toLocaleString();
+
+      // Obtém os dados do formulário
+      const dados = {
+        data: data,
+        nome: formPluga.querySelector("input[name='nome']").value,
+        email: formPluga.querySelector("input[name='email']").value,
+        telefone: formPluga.querySelector("input[name='telefone']").value,
+        interesse: formPluga.querySelector("input[name='interesse']").value,
+      };
+
+      // Converte os dados em um objeto JSON
+      const json = JSON.stringify(dados);
+
+      // Dispara a requisição fetch
+      const response = fetch(formPluga.action, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: json,
+      });
+
+      // Verifica o status da requisição
+      if (response.status === 200) {
+        // Formulário enviado com sucesso
+        alert("Formulário enviado com sucesso!");
+      } else {
+        // Erro ao enviar o formulário
+        alert("Formulário enviado com sucesso!");
+      }
+    });
+</script>
+<!-- dispara formulário -->
+</body>
+?>
+<!-- </html> -->

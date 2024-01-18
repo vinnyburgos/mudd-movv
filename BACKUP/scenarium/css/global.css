@@ -1,0 +1,677 @@
+html,
+body {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-x: hidden;
+  font-family: 'Work Sans', sans-serif;
+  color: #656565;
+  scroll-behavior: smooth;
+}
+.center {
+  position: relative;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1880px;
+}
+.clear {
+  clear: both;
+}
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+a:hover {
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+section.webdoor {
+  position: relative;
+  display: block;
+  padding-top: 0;
+  margin: 0;
+  width: 100%;
+  height: 700px;
+  background: url("../images/bgTopo.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  section.webdoor {
+    height: auto;
+    padding-bottom: 25px;
+  }
+}
+section.webdoor .left {
+  position: relative;
+  display: inline-block;
+  width: 48%;
+  height: 700px;
+  vertical-align: middle;
+}
+@media (max-width: 600px) {
+  section.webdoor .left {
+    width: 100%;
+    height: auto;
+  }
+}
+section.webdoor .left h1 {
+  position: relative;
+  width: 250px;
+  padding-top: 30px;
+  left: 10%;
+}
+section.webdoor .left h1 img {
+  width: 100%;
+  float: left;
+}
+@media (max-width: 600px) {
+  section.webdoor .left h1 img {
+    float: none;
+  }
+}
+section.webdoor .left h3 {
+  position: absolute;
+  bottom: 0px;
+  left: 10%;
+  top: auto;
+  width: 100%;
+  color: #d38214;
+  font-size: 55px;
+  font-weight: 400;
+  font: normal normal italic 48px/60px Playfair Display;
+}
+@media (max-width: 600px) {
+  section.webdoor .left h3 {
+    position: relative;
+    width: auto;
+    float: right;
+    margin-right: 10%;
+    margin-top: 0px;
+  }
+}
+section.webdoor .left h3 img {
+  width: 100%;
+}
+section.webdoor .right {
+  position: relative;
+  display: inline-block;
+  width: 48%;
+  vertical-align: middle;
+}
+@media (max-width: 600px) {
+  section.webdoor .right {
+    width: 100%;
+  }
+}
+section.webdoor .right h3 {
+  color: #fff;
+  float: right;
+  text-align: right;
+  font-size: 50px;
+  max-width: 350px;
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+  section.webdoor .right h3 {
+    float: none;
+  }
+}
+section.webdoor .right .wrapForm {
+  width: 80%;
+  float: right;
+  position: relative;
+  background: rgba(5, 5, 5, 0.5);
+  border-radius: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+@media (max-width: 600px) {
+  section.webdoor .right .wrapForm {
+    float: none;
+    width: 100%;
+  }
+}
+section.webdoor .right .wrapForm .tituloForm {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 100;
+  text-align: left;
+  margin-left: 10%;
+  padding-top: 25px;
+}
+section.webdoor .right .wrapForm form {
+  position: relative;
+  width: 98%;
+  margin: 20px auto;
+}
+section.webdoor .right .wrapForm form input {
+  width: 80%;
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 10px;
+  margin: 5px auto;
+  border: none;
+}
+section.webdoor .right .wrapForm form input#enviaForm {
+  margin-top: 10px;
+  height: 50px;
+  width: 82%;
+  background: #d38214 0% 0% no-repeat padding-box;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+section.webdoor .right .wrapForm form input#enviaForm:hover {
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+section.subBanner {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0;
+  background-color: #0e3756;
+  text-align: center;
+  font: normal normal normal 18px/25px Ubuntu;
+  padding-bottom: 8px;
+}
+@media (max-width: 768px) {
+  section.subBanner {
+    padding-bottom: 25px;
+  }
+}
+section.subBanner .point {
+  position: relative;
+  display: inline-block;
+  width: 23%;
+  top: -7px;
+}
+section.subBanner .point:nth-child(1):before {
+  display: none;
+}
+section.subBanner .point:before {
+  content: '';
+  position: absolute;
+  border-left: 1px solid #fff;
+  height: 30px;
+  left: 30px;
+  top: 20px;
+}
+@media (max-width: 600px) {
+  section.subBanner .point:before {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  section.subBanner .point {
+    width: 100%;
+    top: auto;
+  }
+}
+section.subBanner .point .innerIntegral {
+  position: relative;
+  display: block;
+  width: 350px;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+section.subBanner .point .innerIntegral img {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  right: 20px;
+  top: 14px;
+}
+@media (max-width: 580px) {
+  section.subBanner .point .innerIntegral img {
+    float: left;
+    top: 30px;
+    left: 20%;
+  }
+}
+section.subBanner .point .innerIntegral p {
+  position: relative;
+  top: 10px;
+  font-size: 16px;
+  text-align: center;
+  margin: 15px auto;
+  display: inline-block;
+}
+@media (max-width: 600px) {
+  section.subBanner .point .innerIntegral p {
+    font-size: 13px;
+    left: -40px;
+  }
+}
+@media (max-width: 400px) {
+  section.subBanner .point .innerIntegral p {
+    font-size: 12px;
+    left: 10px;
+    width: 150px;
+    text-align: left;
+  }
+}
+section.subBanner .right {
+  position: relative;
+  display: inline-block;
+  width: 48%;
+  top: -7px;
+}
+@media (max-width: 400px) {
+  section.subBanner .right {
+    width: 55%;
+    float: right;
+  }
+}
+section.subBanner .right .innerIntegral {
+  position: relative;
+  display: block;
+  width: 350px;
+  color: #fff;
+  height: 35px;
+  padding-left: 40px;
+  border-left: 2px solid #fff;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  section.subBanner .right .innerIntegral {
+    padding-left: 10px;
+  }
+}
+section.subBanner .right .innerIntegral img {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  float: left;
+  top: 10px;
+}
+section.subBanner .right .innerIntegral p {
+  position: relative;
+  top: 10px;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  section.subBanner .right .innerIntegral p {
+    font-size: 13px;
+    left: -40px;
+  }
+}
+@media (max-width: 400px) {
+  section.subBanner .right .innerIntegral p {
+    font-size: 12px;
+    left: 10px;
+    width: 150px;
+    text-align: left;
+  }
+}
+section.mosaico {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #5C6C86;
+  background-color: #F5F5F5;
+}
+section.mosaico .left {
+  position: relative;
+  display: inline-block;
+  width: 65%;
+  vertical-align: middle;
+}
+@media (max-width: 600px) {
+  section.mosaico .left {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+section.mosaico .left img {
+  width: 90%;
+  float: right;
+}
+@media (max-width: 600px) {
+  section.mosaico .left img {
+    float: none;
+    margin: 0 auto;
+  }
+}
+section.mosaico .right {
+  position: relative;
+  display: inline-block;
+  width: 32%;
+  padding-left: 20px;
+  vertical-align: bottom;
+}
+@media (max-width: 600px) {
+  section.mosaico .right {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+section.mosaico .right img {
+  position: relative;
+  top: 5px;
+  width: 25px;
+  margin-right: 10px;
+}
+section.mosaico .right h3 {
+  color: #d38214;
+  font: normal normal italic 40px/60px Playfair Display;
+  width: 300px;
+  margin-bottom: 15px;
+}
+section.mosaico .right .pontos {
+  color: #0F3756;
+  font-size: 16px;
+  margin: 0;
+}
+section.mosaico .right .content {
+  color: #0F3756;
+  margin-top: 20px;
+  width: 70%;
+  font-size: 16px;
+}
+section.mosaico .right .btnCta {
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  background-color: #d38214;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  font: normal normal normal 16px/25px Ubuntu;
+}
+section.conheca {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+section.conheca h2 {
+  color: #8f51f4;
+  font-weight: 600;
+}
+section.conheca .swiper-slide {
+  position: relative;
+  height: 500px;
+  padding-top: 40px;
+}
+section.conheca .swiper-slide .box {
+  position: relative;
+  height: 430px;
+  box-shadow: 5px 5px 20px #ccc;
+  border-radius: 30px;
+  text-align: left;
+  overflow: hidden;
+  width: 270px;
+  max-width: 270px;
+  margin: 0 auto;
+}
+section.conheca .swiper-slide .box .imgTop {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+section.conheca .swiper-slide .box .imgTop img {
+  width: 100%;
+  margin-top: -20px;
+}
+section.conheca .swiper-slide .box .innerContent {
+  padding: 20px;
+  padding-top: 0;
+}
+section.conheca .swiper-slide .box .innerContent h4 {
+  margin-top: 12px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #8f51f4;
+}
+section.conheca .swiper-slide .box .innerContent .lineOrange {
+  width: 100%;
+  height: 1px;
+  margin-top: -5px;
+  border-top: 1px solid #ff904e;
+}
+section.conheca .swiper-slide .box .innerContent .ponto {
+  color: #8f51f4;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: -5px;
+  margin-left: 8px;
+}
+section.conheca .swiper-slide .box .innerContent .ponto img {
+  position: relative;
+  width: 20px;
+  left: -8px;
+  top: 4px;
+}
+section.conheca .swiper-slide .box .innerContent .btn {
+  margin: 30px auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+  font-size: 16px;
+  background-color: #ff904e;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+}
+section.realizar {
+  position: relative;
+  display: block;
+  padding-top: 70px;
+}
+@media (max-width: 600px) {
+  section.realizar {
+    padding-top: 0;
+  }
+}
+section.realizar .left {
+  position: relative;
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  padding-left: 10%;
+}
+@media (max-width: 600px) {
+  section.realizar .left {
+    width: 100%;
+    display: block;
+  }
+}
+section.realizar .left h3 {
+  color: #8f51f4;
+  font-size: 30px;
+  font-weight: 600;
+  width: 300px;
+}
+@media (max-width: 600px) {
+  section.realizar .left h3 {
+    width: 80%;
+  }
+}
+section.realizar .left .content {
+  width: 450px;
+  font-size: 20px;
+}
+section.realizar .left .content .black {
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  section.realizar .left .content {
+    width: 80%;
+  }
+}
+section.realizar .left .chamada {
+  position: relative;
+  display: block;
+  margin-top: 40px;
+}
+section.realizar .left .chamada .left {
+  position: relative;
+  width: 50px;
+}
+section.realizar .left .chamada .left img {
+  position: relative;
+  left: -60px;
+}
+section.realizar .left .chamada .right {
+  position: relative;
+  width: 350px;
+  left: -60px;
+}
+@media (max-width: 600px) {
+  section.realizar .left .chamada .right {
+    width: 200x;
+    top: -50px;
+    left: 40px;
+  }
+}
+section.realizar .left .chamada .right p {
+  position: relative;
+  top: -3px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #8f51f4;
+}
+@media (max-width: 600px) {
+  section.realizar .left .chamada .right p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 400px) {
+  section.realizar .left .chamada .right p {
+    font-size: 13px;
+    text-align: left;
+    width: 80%;
+  }
+}
+section.realizar .left .btn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 320px;
+  font-size: 20px;
+  background-color: #ff904e;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+}
+@media (max-width: 600px) {
+  section.realizar .left .btn {
+    width: 270px;
+    display: block;
+    margin-top: -30px;
+  }
+}
+section.realizar .right {
+  position: relative;
+  display: inline-block;
+  width: 35%;
+  vertical-align: top;
+  left: -100px;
+  top: -20px;
+}
+@media (max-width: 600px) {
+  section.realizar .right {
+    left: auto;
+    top: auto;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+section.realizar .right img {
+  width: 100%;
+  float: right;
+}
+@media (max-width: 600px) {
+  section.realizar .right img {
+    width: 60%;
+    float: none;
+    margin: 20px auto;
+  }
+}
+footer {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+footer .left {
+  position: relative;
+  display: inline-block;
+  width: 20%;
+  text-align: left;
+}
+@media (max-width: 600px) {
+  footer .left {
+    width: 100%;
+    text-align: center;
+  }
+}
+footer .right {
+  position: relative;
+  display: inline-block;
+  width: 60%;
+  text-align: left;
+}
+@media (max-width: 600px) {
+  footer .right {
+    width: 100%;
+    text-align: center;
+  }
+}
+footer .right .unidade {
+  position: relative;
+}
+footer .right .unidade .left {
+  width: 3%;
+  position: relative;
+  display: inline-block;
+}
+footer .right .unidade .left img {
+  position: relative;
+  top: -12px;
+}
+footer .right .unidade .right {
+  width: 80%;
+  position: relative;
+  display: inline-block;
+}
+footer .right .unidade .right .titulo {
+  font-weight: 600;
+  margin-bottom: -10px;
+}
+footer .direitos {
+  position: relative;
+  margin-top: 40px;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.wrapWhatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999999999;
+}
+.wrapWhatsapp .whatsapp {
+  width: 50px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.wrapWhatsapp .whatsapp:hover {
+  opacity: 1;
+  transition: all 0.3s;
+}
